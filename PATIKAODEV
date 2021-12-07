@@ -1,0 +1,21 @@
+/*SELECT * FROM FILM
+WHERE  replacement_cost >= 12.99 AND replacement_cost< 16.99;*/
+SELECT COUNT(DISTINCT(replacement_cost))From FILM;
+SELECT COUNT(title)FROM FILM
+WHERE titlE LIKE 'T%' AND rating='G';
+
+SELECT title FROM FILM
+WHERE TITLE LIKE '%n'
+ORDER BY length DESC
+LIMIT 5;
+
+SELECT title FROM FILM
+WHERE TITLE LIKE '%n'
+ORDER BY length DESC
+OFFSET 5
+LIMIT 5;
+
+SELECT * FROM CUSTOMER
+WHERE STORE_ID=1
+ORDER BY last_name DESC
+LIMIT 4;
